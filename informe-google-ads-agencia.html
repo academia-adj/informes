@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Ads — Informe para la agencia</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#0095ce;--yellow:#ffae00;--dark:#1a1d23;--card:#fff;--bg:#f4f5f7;--text:#2d3142;--muted:#6b7280;--green:#22c55e;--red:#ef4444;--orange:#f59e0b;--purple:#8b5cf6;--pink:#ec4899}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.hdr{background:var(--dark);color:#fff;padding:2.4rem 2rem 1.8rem;position:relative}
+.hdr::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--blue),var(--yellow))}
+.hdr h1{font-family:'DM Serif Display',serif;font-size:1.55rem;font-weight:400;margin-bottom:.15rem}
+.hdr p{color:#9ca3af;font-size:.84rem}
+.hdr .scope{display:inline-block;background:#ffffff12;border:1px solid #ffffff22;border-radius:6px;padding:.2rem .65rem;font-size:.76rem;margin-top:.4rem}
+.mx{max-width:1080px;margin:0 auto;padding:1.4rem}
+.sec{background:var(--card);border-radius:12px;padding:1.6rem;margin-bottom:1.3rem;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.sec h2{font-family:'DM Serif Display',serif;font-size:1.15rem;font-weight:400;margin-bottom:.1rem;color:var(--dark)}
+.sec .sub{font-size:.8rem;color:var(--muted);margin-bottom:.9rem}
+.ins{border-left:3px solid var(--blue);border-radius:0 8px 8px 0;padding:.75rem .95rem;margin:.75rem 0;font-size:.84rem;background:#f0f9ff}
+.ins.w{background:#fffbeb;border-left-color:var(--yellow)}.ins.g{background:#f0fdf4;border-left-color:var(--green)}.ins.r{background:#fef2f2;border-left-color:var(--red)}
+.ins strong{color:var(--dark)}
+.krow{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:.55rem;margin-bottom:1rem}
+.kpi{background:var(--card);border-radius:10px;padding:.7rem .8rem;box-shadow:0 1px 3px rgba(0,0,0,.05);border-top:3px solid var(--blue);text-align:center}
+.kpi .lb{font-size:.64rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.kpi .vl{font-family:'DM Serif Display',serif;font-size:1.35rem;color:var(--dark);margin:.05rem 0}
+.kpi .dt{font-size:.7rem;color:var(--muted)}
+.kpi.y{border-top-color:var(--yellow)}.kpi.g{border-top-color:var(--green)}.kpi.r{border-top-color:var(--red)}.kpi.p{border-top-color:var(--purple)}
+.tbl{width:100%;border-collapse:collapse;font-size:.81rem;margin-top:.5rem}
+.tbl th{text-align:left;padding:.38rem .5rem;border-bottom:2px solid #e5e7eb;color:var(--muted);font-weight:600;font-size:.69rem;text-transform:uppercase;letter-spacing:.04em}
+.tbl td{padding:.36rem .5rem;border-bottom:1px solid #f3f4f6;vertical-align:top}
+.tbl tr:last-child td{border-bottom:none}
+.tg{display:inline-block;padding:2px 6px;border-radius:4px;font-size:.68rem;font-weight:600;white-space:nowrap}
+.tg.j{background:#dbeafe;color:#1d4ed8}.tg.a{background:#fef3c7;color:#92400e}
+.co{background:linear-gradient(135deg,#0095ce08,#ffae0008);border:1px solid #0095ce20;border-radius:10px;padding:.85rem 1rem;margin-top:.6rem}
+.co h3{font-size:.86rem;font-weight:700;color:var(--blue);margin-bottom:.15rem}
+.co p,.co li{font-size:.81rem}.co ul{padding-left:1rem;margin-top:.12rem}.co li{margin-bottom:.1rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+@media(max-width:700px){.two{grid-template-columns:1fr}}
+.pct{display:flex;height:26px;border-radius:8px;overflow:hidden;margin:.5rem 0}
+.pct .sg{display:flex;align-items:center;justify-content:center;font-size:.68rem;font-weight:600;color:#fff}
+.alert-card{background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:.85rem 1rem;margin:.6rem 0;font-size:.83rem}
+.alert-card .title{font-weight:700;color:var(--red);font-size:.85rem;margin-bottom:.2rem}
+.alert-card .quote{background:#fff;border-left:3px solid var(--red);padding:.4rem .7rem;margin:.4rem 0;font-size:.8rem;color:var(--dark);border-radius:0 6px 6px 0;font-style:italic}
+.alert-card .fix{font-size:.8rem;color:var(--dark);margin-top:.3rem}
+.good-card{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:.85rem 1rem;margin:.6rem 0;font-size:.83rem}
+.good-card .title{font-weight:700;color:var(--green);font-size:.85rem;margin-bottom:.2rem}
+</style>
+</head>
+<body>
+<div class="hdr">
+<div style="max-width:1080px;margin:0 auto">
+  <h1>Google Ads: análisis de calidad de leads</h1>
+  <p>Feedback para la agencia · Datos reales del formulario con consulta + url_origen + UTM</p>
+  <span class="scope">📊 56 leads de Google Ads · Justicia (42) + AGE (14) · 29 abr — 22 may 2026</span>
+</div>
+</div>
+<div class="mx">
+
+<!-- KPIs -->
+<div class="krow">
+  <div class="kpi"><div class="lb">Leads Ads</div><div class="vl">56</div><div class="dt">~2,4/día</div></div>
+  <div class="kpi" style="border-top-color:var(--red)"><div class="lb">🔥 Calientes</div><div class="vl">29%</div><div class="dt">16 leads</div></div>
+  <div class="kpi" style="border-top-color:var(--orange)"><div class="lb">🟠 Templados</div><div class="vl">55%</div><div class="dt">31 leads</div></div>
+  <div class="kpi" style="border-top-color:#3b82f6"><div class="lb">🔵 Fríos</div><div class="vl">7%</div><div class="dt">4 leads</div></div>
+  <div class="kpi" style="border-top-color:#94a3b8"><div class="lb">⚠️ Problema</div><div class="vl">9%</div><div class="dt">5 leads</div></div>
+</div>
+
+<div class="ins">
+  <strong>Contexto:</strong> estos 56 leads tienen texto de consulta real + url_origen (la página desde la que contactaron). Esto permite saber exactamente qué buscaban, a qué página llegaron, y si la landing de Ads era coherente con su intención.
+</div>
+
+<!-- ========== COMPARATIVA JUSTICIA vs AGE ========== -->
+<div class="sec">
+  <h2>Justicia vs AGE: ¿dónde rinden mejor los Ads?</h2>
+
+  <table class="tbl">
+    <thead><tr><th></th><th><span class="tg j">Justicia</span> (42)</th><th><span class="tg a">AGE</span> (14)</th></tr></thead>
+    <tbody>
+      <tr><td>% calientes</td><td>26%</td><td style="font-weight:700;color:var(--red);">36%</td></tr>
+      <tr><td>% templados</td><td>62%</td><td>36%</td></tr>
+      <tr><td>% fríos</td><td style="color:var(--green);">0%</td><td style="font-weight:700;color:var(--red);">29%</td></tr>
+      <tr><td>% fuera target</td><td>2%</td><td>0%</td></tr>
+      <tr><td>Mejor cuerpo</td><td>Tramitación (29% cal.)</td><td style="font-weight:700;">Administrativo (67% cal.)</td></tr>
+      <tr><td>Peor cuerpo</td><td style="color:var(--red);">Gestión (8% cal.)</td><td style="color:var(--red);">General (0% cal., todo frío)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="ins g">
+    <strong>AGE genera leads más calientes (36% vs 26%), pero también más fríos (29% vs 0%).</strong> Los Ads de AGE están polarizados: o el lead ya quiere comprar, o no sabe ni a qué oposición presentarse. No hay término medio. En Justicia, el grueso es templado (62%), con pocos extremos.
+  </div>
+  <div class="ins w">
+    <strong>Administrativo del Estado es el cuerpo con mayor ROI potencial:</strong> 67% de calientes (4 de 6). Dos tercios de los que llegan por Ads a Administrativo preguntan directamente por precios o quieren empezar ya.
+  </div>
+</div>
+
+<!-- ========== PROBLEMAS: LANDINGS ========== -->
+<div class="sec">
+  <h2>🚨 Problema #1: /contacta como landing de Ads</h2>
+  <div class="sub">18 de 56 leads de Ads (32%) aterrizan en /contacta. Es la landing con peor rendimiento.</div>
+
+  <table class="tbl">
+    <thead><tr><th>Landing</th><th>Leads</th><th>🔥 Cal.</th><th>% cal.</th></tr></thead>
+    <tbody>
+      <tr style="background:#fef2f2;"><td><strong>📞 /contacta</strong></td><td><strong>18</strong></td><td>3</td><td style="color:var(--red);font-weight:700;">17%</td></tr>
+      <tr><td>📋 Landings oposición</td><td>10</td><td>3</td><td>30%</td></tr>
+      <tr><td>🏫 Fichas academia</td><td>10</td><td>4</td><td style="color:var(--green);font-weight:700;">40%</td></tr>
+      <tr><td>🛒 Producto/Checkout</td><td>5</td><td>1</td><td>20%</td></tr>
+      <tr><td>💰 Precio</td><td>4</td><td>3</td><td style="color:var(--green);font-weight:700;">75%</td></tr>
+      <tr><td>🏠 Home</td><td>3</td><td>0</td><td style="color:var(--red);">0%</td></tr>
+    </tbody>
+  </table>
+
+  <div class="ins r">
+    <strong>Dato crítico: /contacta genera un 17% de calientes vs el 40% de las fichas de academia y el 75% de la página de precios.</strong> Cada lead de Ads que llega a /contacta en vez de a una ficha de academia es un clic que rinde menos de la mitad. Y cada uno que llega a la home (3 leads, 0% calientes) es aún peor.
+  </div>
+
+  <div class="co">
+    <h3>Acción para la agencia</h3>
+    <p>Revisar qué grupos de anuncios o keywords llevan a /contacta o a /. Redirigir esos destinos a las fichas de academia (/academia-tramitacion-procesal, /academia-auxilio-judicial, etc.) o a las landings de oposición por cuerpo. El formulario de captación ya está embebido en esas páginas.</p>
+  </div>
+</div>
+
+<!-- ========== PROBLEMA 2: LEADS FRÍOS AGE ========== -->
+<div class="sec">
+  <h2>🚨 Problema #2: todos los leads fríos de Ads son de AGE</h2>
+  <div class="sub">4 leads fríos, todos desde la misma landing: /oposiciones-administracion-estado</div>
+
+  <div class="alert-card">
+    <div class="title">3 leads idénticos desde /oposiciones-administracion-estado</div>
+    <div class="quote">"A qué plaza me va mejor opositar."</div>
+    <div class="quote">"Buenos días, me llamaron el otro día pero no pude atender (...) mi interés era saber las diferencias entre auxiliar administrativo del estado y el administrativo."</div>
+    <div class="fix"><strong>Diagnóstico:</strong> estas personas no saben a qué cuerpo AGE presentarse. Llegan por keywords genéricas ("oposiciones estado", "oposiciones administración") a una landing que no les ayuda a decidir. <strong>El clic se paga, pero el lead no está cualificado.</strong></div>
+  </div>
+
+  <div class="co">
+    <h3>Acción para la agencia</h3>
+    <p>Revisar los search terms de las campañas AGE. Posibles negativas a añadir: "qué oposición elegir", "diferencias entre oposiciones", "qué plaza es mejor". O bien, crear un grupo de anuncios específico para este perfil con una landing de tipo comparador que los cualifique antes de que contacten.</p>
+  </div>
+</div>
+
+<!-- ========== PROBLEMA 3: CONFUSIÓN ENTRE VERTICALES ========== -->
+<div class="sec">
+  <h2>🚨 Problema #3: leads que confunden Justicia y AGE</h2>
+  <div class="sub">5 leads de Ads muestran confusión entre verticales o piden oposiciones que ADJ no prepara</div>
+
+  <div class="alert-card">
+    <div class="title">Lead de AGE > Administrativo que pide Auxilio Judicial</div>
+    <div class="quote">"Quiero empezar a estudiar la oposición de auxilio judicial y no sé por dónde empezar"</div>
+    <div class="fix"><strong>Landing:</strong> /academia-administrativo-del-estado. El usuario busca Auxilio Judicial (Justicia) pero aterriza en Administrativo del Estado (AGE). Posible confusión en el anuncio o keyword match demasiado amplio entre "auxiliar" y "auxilio".</div>
+  </div>
+
+  <div class="alert-card">
+    <div class="title">Lead de Justicia > Gestión que pide Auxilio Judicial</div>
+    <div class="quote">"Info para oposición Auxilio Judicial"</div>
+    <div class="fix"><strong>Landing:</strong> /academia-gestion-procesal. Llegó al formulario de Gestión Procesal pero quiere Auxilio. El anuncio o la keyword están mezclando cuerpos dentro del mismo vertical.</div>
+  </div>
+
+  <div class="alert-card">
+    <div class="title">Lead que pide una oposición que ADJ no prepara</div>
+    <div class="quote">"Estoy interesada en preparar la oposición de Técnico Especialista de Laboratorio del INTyCF"</div>
+    <div class="fix"><strong>Landing:</strong> /precio-academia-justicia (clic pagado). Esta persona buscaba algo completamente diferente. Sugiere que algún keyword broad match está captando tráfico de oposiciones no relacionadas.</div>
+  </div>
+
+  <div class="alert-card">
+    <div class="title">Lead que busca interinos, no oposiciones</div>
+    <div class="quote">"Quiero trabajar como interino de justicia en Madrid, me gustaría conocer requisitos"</div>
+    <div class="fix"><strong>Landing:</strong> /blog/bolsas-interinos-justicia. Un clic pagado a un post de blog informativo sobre interinos. Este lead nunca va a comprar un curso de oposiciones. <strong>Negative keyword sugerida: "interino", "interinos", "bolsa de interinos".</strong></div>
+  </div>
+
+  <div class="co">
+    <h3>Acción para la agencia</h3>
+    <ul>
+      <li>Añadir negativas: "interino", "interinos", "bolsa interinos", "lista interinos"</li>
+      <li>Añadir negativas: "técnico laboratorio", "toxicología", "INTyCF" y similares</li>
+      <li>Revisar que "auxilio" y "auxiliar" no estén cruzados entre campañas de Justicia y AGE</li>
+      <li>Separar bien los grupos de anuncios por cuerpo para evitar que alguien que busca Gestión acabe en Auxilio o viceversa</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ========== PROBLEMA 4: GESTIÓN PROCESAL ========== -->
+<div class="sec">
+  <h2>🚨 Problema #4: Gestión Procesal tiene el peor ratio de Ads</h2>
+  <div class="sub">13 leads de Ads, solo 1 caliente (8%)</div>
+
+  <table class="tbl">
+    <thead><tr><th>Cuerpo (Justicia)</th><th>Leads Ads</th><th>🔥 Cal.</th><th>% cal.</th></tr></thead>
+    <tbody>
+      <tr><td>General</td><td>8</td><td>5</td><td style="font-weight:700;">62%</td></tr>
+      <tr><td>Tramitación</td><td>14</td><td>4</td><td>29%</td></tr>
+      <tr><td>Auxilio</td><td>7</td><td>1</td><td>14%</td></tr>
+      <tr style="background:#fef2f2;"><td><strong>Gestión Procesal</strong></td><td><strong>13</strong></td><td><strong>1</strong></td><td style="color:var(--red);font-weight:700;"><strong>8%</strong></td></tr>
+    </tbody>
+  </table>
+
+  <p style="font-size:.84rem;margin:.8rem 0 .4rem;">Qué escriben los 12 leads NO calientes de Gestión Procesal:</p>
+  <div style="font-size:.81rem;color:var(--muted);line-height:1.8;">
+    "informarme sobre las oposiciones" · "información curso + organización plan de estudios" · "estaría interesada en prepararme" · "información oposición + dinámica" · "quiero información sobre la oposición" · "temario" · "Solicito información" · "info para oposición Auxilio Judicial" (cuerpo equivocado) · "Información general de la oposición" · "presentarme a la próxima convocatoria del País Vasco" · "sobre temario, me llamaron una vez y no pudieron"
+  </div>
+
+  <div class="ins w">
+    <strong>El lead de Gestión llega por Ads en modo 100% exploratorio.</strong> Pide información genérica, quiere saber cómo funciona la oposición, pregunta por temarios. Nadie pregunta por precios. Esto puede indicar que los keywords de Gestión son demasiado informativos ("oposiciones gestión procesal", "temario gestión procesal") y no transaccionales ("academia gestión procesal", "preparar gestión procesal precio").
+  </div>
+
+  <div class="co">
+    <h3>Acción para la agencia</h3>
+    <p>Revisar los search terms de Gestión Procesal. Si el grueso del tráfico viene de keywords informativas, considerar:</p>
+    <ul>
+      <li>Crear un grupo de anuncios con keywords más transaccionales ("academia gestión procesal", "curso gestión procesal online", "preparar gestión procesal precio")</li>
+      <li>Añadir extensiones de precio en los anuncios de Gestión para filtrar a los que buscan info gratis</li>
+      <li>Evaluar si el presupuesto de Gestión está justificado con un 8% de calientes, o si rinde más reasignarlo a Administrativo del Estado (67% calientes) o Tramitación (29%)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ========== LO QUE SÍ FUNCIONA ========== -->
+<div class="sec">
+  <h2>✅ Lo que sí funciona bien</h2>
+
+  <div class="good-card">
+    <div class="title">Ads → /precio-academia-justicia: 75% calientes</div>
+    <p>4 leads, 3 calientes. Preguntan directamente por precios, formas de pago, mensualidades. Es la combinación landing+canal con mayor ROI.</p>
+  </div>
+
+  <div class="good-card">
+    <div class="title">Ads → fichas de academia: 40% calientes</div>
+    <p>10 leads, 4 calientes. Las fichas /academia-tramitacion-procesal, /academia-gestion-procesal y /academia-administrativo-del-estado funcionan bien como landing: tienen el formulario embebido y contexto suficiente.</p>
+  </div>
+
+  <div class="good-card">
+    <div class="title">Administrativo del Estado: 67% calientes en Ads</div>
+    <p>6 leads de Ads, 4 calientes. Es el cuerpo con mejor rendimiento de Ads en todo el catálogo. Los anuncios de Administrativo están captando gente con intención de compra real.</p>
+  </div>
+
+  <div class="good-card">
+    <div class="title">Ads → /oep-2026-age y /gracias-por-solicitar-info-oep-age-2026: 100% calientes</div>
+    <p>2 leads, ambos calientes. Son personas que ya habían interactuado con la OEP y vuelven con intención de compra. El retargeting o las campañas vinculadas a la OEP están funcionando.</p>
+  </div>
+</div>
+
+<!-- ========== RESUMEN ACCIONES ========== -->
+<div class="sec">
+  <h2>Resumen de acciones para la agencia</h2>
+
+  <div class="co">
+    <h3>1. Redirigir tráfico de /contacta y / a fichas de academia</h3>
+    <p>21 leads (38%) llegan a /contacta o a la home. Son las landings con peor ratio de calientes (17% y 0%). Reasignar estos destinos a fichas de academia (40% calientes) o a la página de precios (75%) duplicaría la tasa de leads calientes de esos clics.</p>
+  </div>
+
+  <div class="co">
+    <h3>2. Añadir negative keywords</h3>
+    <ul>
+      <li>"interino", "interinos", "bolsa interinos", "lista interinos" (1 lead pagado fuera de target)</li>
+      <li>"técnico laboratorio", "INTyCF", "toxicología" (1 lead pagado completamente fuera)</li>
+      <li>Revisar cross-match entre "auxilio" (Justicia) y "auxiliar" (AGE)</li>
+    </ul>
+  </div>
+
+  <div class="co">
+    <h3>3. Reevaluar presupuesto de Gestión Procesal</h3>
+    <p>13 leads, 1 caliente (8%). Es el cuerpo con peor rendimiento. Opciones: refinar keywords hacia transaccionales, o reasignar parte del presupuesto a Administrativo del Estado (67% calientes) que está rindiendo mucho mejor.</p>
+  </div>
+
+  <div class="co">
+    <h3>4. Separar mejor los grupos de anuncios por cuerpo</h3>
+    <p>Hay leads que confunden verticales (piden Auxilio Judicial en formulario de Administrativo del Estado) y leads que confunden cuerpos dentro del mismo vertical (piden Auxilio en el formulario de Gestión). Esto sugiere que algunos keywords matchean entre grupos o que los ad groups no tienen suficientes negativas cruzadas entre cuerpos.</p>
+  </div>
+
+  <div class="co">
+    <h3>5. Reforzar las campañas vinculadas a OEP/convocatoria</h3>
+    <p>Los leads que llegan desde páginas de OEP o de "gracias por solicitar info" son 100% calientes. Son personas que ya mostraron interés previamente. Considerar crear audiencias de retargeting basadas en visitantes de estas páginas.</p>
+  </div>
+
+  <div class="co">
+    <h3>6. Considerar landing pages específicas para Ads en AGE</h3>
+    <p>Los 3 leads fríos de AGE llegan todos a /oposiciones-administracion-estado, que es una landing genérica de todo el vertical. Si tuvieran landings específicas por cuerpo (Auxiliar, Administrativo, GACE) con un "test de orientación" ("¿qué cuerpo AGE te conviene?"), los leads fríos podrían autofiltrarse antes de contactar.</p>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
